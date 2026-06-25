@@ -1,12 +1,12 @@
-function generatePassword(length) {
+function generatePasskey(length) {
     const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
-    let password = "";
+    let passkey = "";
 
     for (let i = 0; i < length; i++) {
-        password += chars[Math.floor(Math.random() * chars.length)];
+        passkey += chars[Math.floor(Math.random() * chars.length)];
     }
 
-    return password;
+    return passkey;
 }
 
-console.log(generatePassword(12));
+console.log(generatePasskey(12));
